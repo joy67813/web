@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario de Experiencia</title>
+<link rel="stylesheet" href="formulario.css">
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Formulario sobre tu experiencia</h1>
+
+<h2>Información Personal</h2>
+<form action="formulario.php" method="post">
+  Nombre de Usuario: <input type="text" name="nombre" required><br><br>
+  Correo Electrónico: <input type="email" name="correo" required><br><br>
+
+<h2>Material Didáctico Utilizado</h2>
+<p>Marca cuál ha sido para ti el mejor material didáctico para tu aprendizaje:</p>
+  <input type="checkbox" name="material[]" value="juegos"> Juegos y actividades interactivas<br>
+  <input type="checkbox" name="material[]" value="videos"> Videos educativos<br>
+  <input type="checkbox" name="material[]" value="apps"> Aplicaciones móviles educativas<br>
+  <input type="checkbox" name="material[]" value="graficos"> Gráficos y diagramas<br>
+  <input type="checkbox" name="material[]" value="textos"> Textos y libros de texto<br><br>
+
+<h2>Sugerencias</h2>
+<p>¿Qué otro tipo de material didáctico crees que debería incorporarse en el aprendizaje?</p>
+  <textarea name="sugerencias" rows="4" cols="50"></textarea><br><br>
+
+<h2>Opinión sobre la página</h2>
+<p>Déjanos tu opinión sobre esta página:</p>
+  <textarea name="opinion" rows="4" cols="50"></textarea><br><br>
+
+  <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
